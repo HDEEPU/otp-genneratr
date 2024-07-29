@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dd">
+        <div id="ab">
+            <h1 id="h1" class="h2">otp generator</h1>
+        </div>
+        <div id="con"><br><br>
+            <label for="otp" id="pp" class="tx">Otp</label><br>
+            <input type="text" id="tt" class="tx"><br>
+            <button id="bb" onclick="btn()" class="tx">click</button>
+        </div>
+        <div id="gg"><h1>thanks for watching</h1></div>
+    </div>
+    <script>
+        function btn(){
+            var otp=""
+            var a=Number(prompt("enter no of your choise"));
+            for(i=1; i<=a; i++){
+                var x=Math.floor(Math.random()*9)
+                otp+=x
+
+            }
+        document.getElementById("tt").value=otp
+        }
+
+    </script>
+</body>
+</html>
